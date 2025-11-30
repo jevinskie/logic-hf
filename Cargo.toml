@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/logic-hf", "crates/logic-hf-cli", "crates/logic-hf-core"]
+resolver = "3"
