@@ -1,3 +1,21 @@
 [workspace]
-members = ["crates/logic-hf", "crates/logic-hf-cli", "crates/logic-hf-core"]
+members = ["crates/*"]
 resolver = "3"
+
+[workspace.package]
+authors = ["Jevin Sweval <jevinsweval@gmail.com>"]
+license = "BSD-2-Clause"
+repository = "https://github.com/jevinskie/logic-hf"
+rust-version = "1.91"
+
+[workspace.dependencies]
+logic-hf = { version = "0.11", path = "crates/logic-hf", default-features = false }
+logic-hf-core = { version = "0.11", path = "crates/logic-hf-core", default-features = false }
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+
+[profile.release-with-debug]
+inherits = "release"
+debug = "limited"
