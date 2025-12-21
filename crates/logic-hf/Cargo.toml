@@ -1,5 +1,6 @@
 [dependencies]
 espresso-logic = "3.1.2"
+nom = "8.0.0"
 logic-hf-core.workspace = true
 
 [package]

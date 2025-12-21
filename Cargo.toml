@@ -12,6 +12,7 @@ resolver = "3"
 
 [workspace.dependencies]
 logic-hf = {version = "0.1", path = "crates/logic-hf", default-features = false}
+# logic-hf-cli = {version = "0.1", path = "crates/logic-hf-cli", default-features = false}
 logic-hf-core = {version = "0.1", path = "crates/logic-hf-core", default-features = false}
 
 [workspace.package]

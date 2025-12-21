@@ -1,5 +1,7 @@
 [dependencies]
 clap = {version = "4.5.53", features = ["unicode", "unstable-v5", "default", "wrap_help", "derive", "unstable-ext", "unstable-styles"]}
+logic-hf.workspace = true
+logic-hf-core.workspace = true
 
 [package]
 edition = "2024"
