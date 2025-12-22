@@ -27,12 +27,6 @@ repos:
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --indent, '2']
-  - id: pretty-format-toml
-    args: [--autofix]
-    exclude: |
-      (?x)^(
-          Cargo.lock
-      )$
 - repo: local
   hooks:
   - id: rust-fmt

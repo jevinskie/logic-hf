@@ -1,13 +1,19 @@
-[dependencies]
-clap = {version = "4.5.53", features = ["unicode", "unstable-v5", "default", "wrap_help", "derive", "unstable-ext", "unstable-styles"]}
-logic-hf.workspace = true
-logic-hf-core.workspace = true
-
 [package]
-edition = "2024"
 name = "logic-hf-cli"
-version = "0.1.0"
+
 authors.workspace = true
+edition.workspace = true
 license.workspace = true
 repository.workspace = true
 rust-version.workspace = true
+version.workspace = true
+
+[dependencies]
+camino = "1.2.2"
+
+clap = {version = "4.5.53", features = ["unicode", "unstable-v5", "default", "wrap_help", "derive", "unstable-ext", "unstable-styles"]}
+clap-stdin = {version = "0.8.0"}
+clap-verbosity-flag = "3.0.4"
+
+logic-hf.workspace = true
+logic-hf-core.workspace = true

@@ -1,13 +1,15 @@
-[dependencies]
-espresso-logic = "3.1.2"
-nom = "8.0.0"
-logic-hf-core.workspace = true
-
 [package]
-edition = "2024"
 name = "logic-hf"
-version = "0.1.0"
+
 authors.workspace = true
+edition.workspace = true
 license.workspace = true
 repository.workspace = true
 rust-version.workspace = true
+version.workspace = true
+
+[dependencies]
+espresso-logic = "3.1.2"
+nom = "8.0.0"
+
+logic-hf-core.workspace = true
