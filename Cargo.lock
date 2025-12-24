@@ -506,6 +506,7 @@ dependencies = [
  "clap-verbosity-flag",
  "logic-hf",
  "logic-hf-core",
+ "shlex",
 ]
 
 [[package]]
